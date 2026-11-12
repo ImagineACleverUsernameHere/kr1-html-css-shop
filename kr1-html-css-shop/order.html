@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оставьте заявку на персональную подборку одежды, украшений или косметики StyleMuse.">
+  <title>Заявка — StyleMuse</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="site-logo" href="index.html" aria-label="StyleMuse — главная">style<span>muse</span><i>.</i></a><nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list"><li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Образ дня</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li></ul></nav><a class="site-header__saved" href="catalog.html#products">Избранное <span class="saved-count js-saved-count">0</span></a></header>
+  <main class="page-shell page-main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span> / </span><span aria-current="page">Заявка</span></nav>
+    <section class="page-intro"><p class="eyebrow">ТВОЙ ЗАПРОС</p><h1>Расскажешь, что <em>ищем?</em></h1><p>Заполни короткую форму, чтобы обозначить направление персональной подборки. Сейчас она работает в демонстрационном режиме и никуда не отправляет данные.</p></section>
+    <div class="form-layout">
+      <aside class="form-aside"><span class="form-aside__symbol">✳</span><h2>Никаких строгих правил.</h2><p>Можно прийти с готовой идеей или просто с желанием что-нибудь изменить. Начнём с малого.</p><ul><li>Одежда и готовые образы</li><li>Украшения и аксессуары</li><li>Косметика и маникюр</li></ul></aside>
+      <form class="request-form js-request-form" novalidate>
+        <div class="form-grid"><label class="form-field"><span>Имя *</span><input class="form-control" type="text" name="name" minlength="2" required placeholder="Твоё имя"></label><label class="form-field"><span>E-mail *</span><input class="form-control" type="email" name="email" required placeholder="name@example.com"></label><label class="form-field"><span>Телефон</span><input class="form-control" type="tel" name="phone" pattern="[+0-9() -]{7,}" placeholder="+7 900 000-00-00"></label><label class="form-field"><span>Когда актуально?</span><input class="form-control" type="date" name="date"></label><label class="form-field form-field--wide"><span>Категория *</span><select class="form-control" name="category" required><option value="">Выбери категорию</option><option>Одежда</option><option>Украшения</option><option>Косметика</option><option>Полный образ</option></select></label><label class="form-field form-field--wide"><span>Расскажи о пожеланиях</span><textarea class="form-control" name="comment" rows="4" maxlength="500" placeholder="Повод, любимые цвета, желаемое настроение..."></textarea></label></div>
+        <label class="checkbox-field"><input type="checkbox" name="agreement" required><span>Я согласна на обработку данных в рамках демонстрации проекта. *</span></label>
+        <button class="button button--primary" type="submit">Отправить заявку</button><p class="form-note">* Обязательные поля. Данные не сохраняются на сервере.</p><p class="success-message js-form-success" aria-live="polite" hidden>Готово! Форма успешно проверена. Это демонстрация без backend.</p>
+      </form>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="page-shell site-footer__inner"><a class="site-logo site-logo--footer" href="index.html">style<span>muse</span><i>.</i></a><p>Учебный проект · 2026</p><div class="site-footer__links"><a href="contacts.html">Контакты</a><a href="catalog.html">Каталог</a></div></div></footer>
+</body>
+</html>

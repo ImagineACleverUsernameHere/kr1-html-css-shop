@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог StyleMuse: одежда, украшения и косметика с фильтрами по категории и поводу.">
+  <title>Каталог — StyleMuse</title><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="StyleMuse — главная">style<span>muse</span><i>.</i></a>
+    <nav class="site-nav" aria-label="Основная навигация"><ul class="site-nav__list">
+      <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li><li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li><li class="site-nav__item"><a class="site-nav__link" href="product.html">Образ дня</a></li><li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li><li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+    </ul></nav><a class="site-header__saved" href="#products">Избранное <span class="saved-count js-saved-count">0</span></a>
+  </header>
+  <main class="page-shell page-main">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span> / </span><span aria-current="page">Каталог</span></nav>
+    <section class="page-intro"><p class="eyebrow">ПОДБОРКА STYLEMUSE</p><h1>Найди то, что <em>откликается.</em></h1><p>Небольшая коллекция вещей, аксессуаров и средств красоты. Используй фильтры, сохраняй понравившееся и сравнивай варианты.</p></section>
+    <div class="catalog-layout">
+      <aside class="catalog-filters">
+        <div class="catalog-filters__heading"><h2>Фильтры</h2><span>01 / 03</span></div>
+        <label class="form-field"><span>Категория</span><select class="form-control js-filter-category"><option value="all">Все категории</option><option value="clothes">Одежда</option><option value="jewelry">Украшения</option><option value="beauty">Красота</option></select></label>
+        <label class="form-field"><span>Повод</span><select class="form-control js-filter-occasion"><option value="all">Любой повод</option><option value="everyday">На каждый день</option><option value="work">Учёба и работа</option><option value="party">Особый случай</option></select></label>
+        <label class="form-field"><span>Поиск</span><input class="form-control js-filter-search" type="search" placeholder="Например, серьги"></label>
+        <p class="catalog-filters__hint">Фильтры работают локально и не требуют регистрации.</p>
+        <button class="button button--outline button--small js-reset-filters" type="button">Сбросить фильтры</button>
+      </aside>
+      <section class="catalog-results" id="products" aria-label="Товары">
+        <div class="catalog-toolbar"><p class="catalog-toolbar__count"><strong class="js-product-count">6</strong> предметов в подборке</p><button class="button button--outline button--small js-open-compare" type="button" hidden>Сравнить выбранное (<span class="js-compare-count">0</span>)</button></div>
+        <div class="products-grid">
+          <article class="product-card" data-category="clothes" data-occasion="everyday work" data-name="Платье-комбинация Alba" data-price="6490">
+            <a class="product-card__visual product-visual product-visual--dress" href="product.html" aria-label="Открыть платье-комбинацию Alba"><span class="product-visual__tag">НОВИНКА</span><span class="product-visual__art">01</span><span class="product-visual__caption">SOFT STRUCTURE</span></a>
+            <div class="product-card__body"><div><p class="product-card__category">ОДЕЖДА · НА КАЖДЫЙ ДЕНЬ</p><h3><a href="product.html">Платье-комбинация Alba</a></h3></div><p class="product-card__price">6 490 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="alba" type="button" aria-label="Добавить платье Alba в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="alba" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+          <article class="product-card" data-category="clothes" data-occasion="work everyday" data-name="Жакет Forma" data-price="8990">
+            <a class="product-card__visual product-visual product-visual--jacket" href="product.html" aria-label="Открыть жакет Forma"><span class="product-visual__tag">БАЗА</span><span class="product-visual__art">02</span><span class="product-visual__caption">EVERYDAY CLASSIC</span></a>
+            <div class="product-card__body"><div><p class="product-card__category">ОДЕЖДА · РАБОТА</p><h3><a href="product.html">Жакет Forma</a></h3></div><p class="product-card__price">8 990 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="forma" type="button" aria-label="Добавить жакет Forma в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="forma" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+          <article class="product-card" data-category="jewelry" data-occasion="everyday party" data-name="Серьги Luna" data-price="3290">
+            <div class="product-card__visual product-visual product-visual--earrings"><span class="product-visual__tag">ХИТ</span><span class="product-visual__art">03</span><span class="product-visual__caption">A LITTLE SHINE</span></div>
+            <div class="product-card__body"><div><p class="product-card__category">УКРАШЕНИЯ · УНИВЕРСАЛЬНО</p><h3>Серьги Luna</h3></div><p class="product-card__price">3 290 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="luna" type="button" aria-label="Добавить серьги Luna в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="luna" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+          <article class="product-card" data-category="jewelry" data-occasion="party work" data-name="Колье Sol" data-price="4590">
+            <div class="product-card__visual product-visual product-visual--necklace"><span class="product-visual__art">04</span><span class="product-visual__caption">DETAILS MATTER</span></div>
+            <div class="product-card__body"><div><p class="product-card__category">УКРАШЕНИЯ · ОСОБЫЙ СЛУЧАЙ</p><h3>Колье Sol</h3></div><p class="product-card__price">4 590 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="sol" type="button" aria-label="Добавить колье Sol в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="sol" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+          <article class="product-card" data-category="beauty" data-occasion="everyday party" data-name="Помада Rosewood" data-price="1590">
+            <div class="product-card__visual product-visual product-visual--lipstick"><span class="product-visual__tag">BEAUTY</span><span class="product-visual__art">05</span><span class="product-visual__caption">YOUR SHADE</span></div>
+            <div class="product-card__body"><div><p class="product-card__category">КРАСОТА · МАКИЯЖ</p><h3>Помада Rosewood</h3></div><p class="product-card__price">1 590 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="rosewood" type="button" aria-label="Добавить помаду Rosewood в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="rosewood" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+          <article class="product-card" data-category="beauty" data-occasion="everyday work" data-name="Лак Soft Mauve" data-price="790">
+            <div class="product-card__visual product-visual product-visual--nail"><span class="product-visual__art">06</span><span class="product-visual__caption">SMALL JOYS</span></div>
+            <div class="product-card__body"><div><p class="product-card__category">КРАСОТА · МАНИКЮР</p><h3>Лак Soft Mauve</h3></div><p class="product-card__price">790 ₽</p></div>
+            <div class="product-card__actions"><button class="icon-button js-favorite" data-product-id="mauve" type="button" aria-label="Добавить лак Soft Mauve в избранное" aria-pressed="false">♡</button><button class="button button--outline button--small js-compare" data-product-id="mauve" type="button" aria-pressed="false">Сравнить</button></div>
+          </article>
+        </div>
+        <p class="empty-state js-empty-state" hidden>Ничего не нашлось. Попробуй изменить фильтры.</p>
+        <p class="catalog-disclaimer">Все товары и цены на этой странице демонстрационные и используются для учебного проекта.</p>
+      </section>
+    </div>
+  </main>
+  <dialog class="compare-dialog" id="compare-dialog"><div class="dialog__header"><div><p class="eyebrow">СРАВНЕНИЕ</p><h2>Два варианта. <em>Один выбор?</em></h2></div><button class="icon-button js-close-compare" type="button" aria-label="Закрыть">×</button></div><div class="js-compare-table"></div></dialog>
+  <footer class="site-footer"><div class="page-shell site-footer__inner"><a class="site-logo site-logo--footer" href="index.html">style<span>muse</span><i>.</i></a><p>Учебный проект · 2026</p><div class="site-footer__links"><a href="contacts.html">Контакты</a><a href="order.html">Оставить заявку</a></div></div></footer>
+</body>
+</html>

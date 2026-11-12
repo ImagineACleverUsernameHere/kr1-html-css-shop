@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StyleMuse помогает подобрать одежду, украшения и косметику под ваши предпочтения и настроение.">
+  <title>StyleMuse — найди свой стиль</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="StyleMuse — главная">style<span>muse</span><i>.</i></a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="product.html">Образ дня</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <a class="site-header__saved" href="catalog.html#products">Избранное <span class="saved-count js-saved-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero page-shell">
+      <div class="hero__content">
+        <p class="eyebrow">ТВОЙ СТИЛЬ. ТВОИ ПРАВИЛА.</p>
+        <h1 class="hero__title">Одежда, в которой <em>ты — это ты.</em></h1>
+        <p class="hero__text">Персональные идеи для гардероба, украшений и макияжа. Начни с небольшого знакомства с собой, а мы соберём подборку под твои предпочтения.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#style-quiz">Подобрать мой стиль</a>
+          <a class="text-link" href="catalog.html">Смотреть каталог <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero__note">Без строгих правил. Без чужих ожиданий. Только идеи.</p>
+      </div>
+      <div class="hero-art" aria-label="Декоративная композиция в оттенках бежевого и терракотового" role="img">
+        <div class="hero-art__sun"></div>
+        <div class="hero-art__shape hero-art__shape--one"></div>
+        <div class="hero-art__shape hero-art__shape--two"></div>
+        <div class="hero-art__label"><span>STYLE NOTES</span><strong>01 / 03</strong></div>
+        <div class="hero-art__flower">✳</div>
+      </div>
+    </section>
+
+    <section class="intro-strip page-shell" aria-label="О проекте">
+      <span>ПЕРСОНАЛЬНЫЕ ПОДБОРКИ</span><span class="intro-strip__dot">✳</span>
+      <span>ОДЕЖДА · УКРАШЕНИЯ · КОСМЕТИКА</span><span class="intro-strip__dot">✳</span>
+      <span>ВДОХНОВЕНИЕ НА КАЖДЫЙ ДЕНЬ</span>
+    </section>
+
+    <section class="section page-shell" id="style-quiz">
+      <div class="section-heading">
+        <div><p class="eyebrow">ШАГ 01 / ЗНАКОМСТВО</p><h2>Давай подберём <em>твоё направление</em></h2></div>
+        <p class="section-heading__aside">Ответь на четыре коротких вопроса. Это демонстрационный подбор по твоим ответам, а не профессиональная диагностика.</p>
+      </div>
+      <form class="quiz-card js-style-quiz">
+        <fieldset class="quiz-card__group">
+          <legend>Какие оттенки тебе обычно нравятся?</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="palette" value="warm" checked><span class="choice__swatches choice__swatches--warm"></span><strong>Тёплые</strong><small>Кремовый, карамель, терракота</small></label>
+            <label class="choice"><input type="radio" name="palette" value="cool"><span class="choice__swatches choice__swatches--cool"></span><strong>Холодные</strong><small>Серый, голубой, ягодный</small></label>
+            <label class="choice"><input type="radio" name="palette" value="neutral"><span class="choice__swatches choice__swatches--neutral"></span><strong>Нейтральные</strong><small>Молочный, чёрный, бежевый</small></label>
+          </div>
+        </fieldset>
+        <fieldset class="quiz-card__group">
+          <legend>Какое настроение ближе?</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="mood" value="classic" checked> Спокойная классика</label>
+            <label><input type="radio" name="mood" value="casual"> Комфортный casual</label>
+            <label><input type="radio" name="mood" value="romantic"> Романтика и детали</label>
+          </div>
+        </fieldset>
+        <fieldset class="quiz-card__group">
+          <legend>Какой силуэт одежды тебе ближе?</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="fit" value="waist" checked> С акцентом на талии</label>
+            <label><input type="radio" name="fit" value="straight"> Прямой силуэт</label>
+            <label><input type="radio" name="fit" value="relaxed"> Свободная посадка</label>
+          </div>
+        </fieldset>
+        <fieldset class="quiz-card__group">
+          <legend>Для чего ищем идеи?</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="purpose" value="everyday" checked> На каждый день</label>
+            <label><input type="radio" name="purpose" value="work"> Для учёбы или работы</label>
+            <label><input type="radio" name="purpose" value="party"> Для особого случая</label>
+          </div>
+        </fieldset>
+        <div class="quiz-card__footer">
+          <button class="button button--primary" type="submit">Получить мою подборку</button>
+          <p class="form-note">Результат можно изменить в любой момент.</p>
+        </div>
+        <div class="quiz-result js-quiz-result" aria-live="polite" hidden></div>
+      </form>
+    </section>
+
+    <section class="section section--soft">
+      <div class="page-shell">
+        <div class="section-heading">
+          <div><p class="eyebrow">ШАГ 02 / ВЫБОР</p><h2>Всё для <em>твоего образа</em></h2></div>
+          <a class="text-link" href="catalog.html">Весь каталог <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-card--clothes" href="catalog.html?category=clothes"><span class="category-card__number">01</span><span class="category-card__title">Одежда</span><span class="category-card__arrow">↗</span></a>
+          <a class="category-card category-card--jewelry" href="catalog.html?category=jewelry"><span class="category-card__number">02</span><span class="category-card__title">Украшения</span><span class="category-card__arrow">↗</span></a>
+          <a class="category-card category-card--beauty" href="catalog.html?category=beauty"><span class="category-card__number">03</span><span class="category-card__title">Красота</span><span class="category-card__arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-shell">
+      <div class="feature-banner">
+        <div><p class="eyebrow">НЕ ЗНАЕШЬ, С ЧЕГО НАЧАТЬ?</p><h2>Один образ может изменить <em>настроение дня.</em></h2><p>Посмотри нашу идею образа и отдельные товары, из которых он собран.</p><a class="button button--light" href="product.html">Посмотреть образ</a></div>
+        <div class="feature-banner__stamp">SM<br><span>STYLE<br>IN MIND</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="page-shell site-footer__inner"><a class="site-logo site-logo--footer" href="index.html">style<span>muse</span><i>.</i></a><p>Учебный проект · 2026</p><div class="site-footer__links"><a href="contacts.html">Контакты</a><a href="catalog.html">Каталог</a></div></div></footer>
+</body>
+</html>
